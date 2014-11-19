@@ -1,0 +1,29 @@
+<head>
+	<title>blaze-remove-test</title>
+</head>
+
+<body>
+	{{> withData}}
+	{{> withoutData}}
+</body>
+
+<template name="withData">
+	<button>Render with data</button>
+</template>
+
+<template name="withoutData">
+	<button>render without data</button>
+</template>
+
+
+<template name="renderMe">
+	<div>
+		<span class="index">{{i}}</span>
+		{{#if i}}
+			With Data
+		{{else}}
+			Without Data
+		{{/if}}
+		<button class="del">Delete</button>
+	</div>	
+</template>
